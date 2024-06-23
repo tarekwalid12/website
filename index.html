@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spreadshirt Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Spreadshirt Clone</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('shop')">Shop</a></li>
+                <li><a href="#" onclick="showPage('design')">Design</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Shop Page -->
+        <section id="shop" class="hidden">
+            <h2>Shop</h2>
+            <div class="categories">
+                <button onclick="showCategory('men')">Men</button>
+                <button onclick="showCategory('women')">Women</button>
+                <button onclick="showCategory('kids')">Kids</button>
+            </div>
+            <div id="products" class="hidden"></div>
+        </section>
+
+        <!-- Design Page -->
+        <section id="design" class="hidden">
+            <h2>Design Your Own</h2>
+            <div id="design-options">
+                <button onclick="startDesign('tshirt')">T-shirt</button>
+                <button onclick="startDesign('hoodie')">Hoodie</button>
+                <!-- Add more design options as needed -->
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
